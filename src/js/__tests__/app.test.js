@@ -20,10 +20,7 @@ const printres = [
 
 describe('testing fuction orderByProps', () => {
   const result = orderByProps(obj, arrOrder);
-  test('arrSort with toEqual', () => {
+  test('orderByProps with toEqual', () => {
     expect(result).toEqual(printres);
-  });
-  test('arrSort with toBe', () => {
-    expect(result).not.toBe(printres);
   });
 });

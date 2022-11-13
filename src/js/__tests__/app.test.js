@@ -10,7 +10,7 @@ const obj = {
 
 const arrOrder = ['name', 'level'];
 
-const printres = [
+const output = [
   { key: 'name', value: 'мечник' },
   { key: 'level', value: 2 },
   { key: 'attack', value: 80 },
@@ -21,6 +21,6 @@ const printres = [
 describe('testing fuction orderByProps', () => {
   const result = orderByProps(obj, arrOrder);
   test('orderByProps with toEqual', () => {
-    expect(result).toEqual(printres);
+    expect(result).toEqual(output);
   });
 });

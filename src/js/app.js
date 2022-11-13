@@ -8,7 +8,7 @@ const obj = {
 
 const arrOrder = ["name", "level"];
 
-function orderByProps (object, arr ) {
+export default function orderByProps (object, arr ) {
     const character = [];
     const data = {...object};
     for (const item of arr) {
@@ -36,5 +36,3 @@ function quality(key, value) {
         value: value
     };
 }
-
-console.log(orderByProps(obj, arrOrder));
